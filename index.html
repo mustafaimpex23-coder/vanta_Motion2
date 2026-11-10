@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanta Motions | Ideas. In Motion.</title>
+  <meta name="description" content="Vanta Motions is a modern creative studio specializing in high-impact marketing, design and digital solutions.">
+
+  <!-- Brand fonts: Playfair Display (headings), Montserrat (body 400 / nav & buttons 500) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Flags that JS is running so scroll-reveal content is only hidden when it can be revealed -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER (shared) ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo: uses images/logo.png if it exists, otherwise the text logo shows -->
+      <a href="index.html" class="logo" aria-label="Vanta Motions home">
+        <img class="logo-img" src="images/logo.png" alt="Vanta Motions" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">
+        <span class="logo-text">Vanta <span>Motions</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm" href="contact.html">Get Started <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= 1. HERO ================= -->
+    <section class="hero">
+      <!-- Background decoration -->
+      <div class="deco" aria-hidden="true">
+        <span class="glow-line" style="top:30%; left:-20%;"></span>
+        <span class="glow-line glow-line--faint" style="top:62%; left:-30%;"></span>
+        <span class="chevron" style="bottom:-60px; left:-120px;"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div>
+          <span class="label reveal">Creative Studio</span>
+          <h1 class="reveal" data-delay="1">Ideas. <span class="accent">In Motion.</span></h1>
+          <p class="lead reveal" data-delay="2">Vanta Motions is a modern creative studio specializing in high-impact marketing, design and digital solutions.</p>
+          <div class="btn-row reveal" data-delay="3">
+            <a class="btn btn--primary" href="contact.html">Get Started <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn--outline" href="about.html">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Stacked chevrons echoing the "M" mark -->
+        <div class="hero-visual reveal" data-delay="2" aria-hidden="true">
+          <span class="v v1"></span>
+          <span class="v v2"></span>
+          <span class="v v3"></span>
+        </div>
+      </div>
+
+      <span class="scroll-cue" aria-hidden="true">Scroll</span>
+    </section>
+
+    <!-- ================= 2. WHAT WE DO ================= -->
+    <section class="section section--charcoal" id="services">
+      <div class="deco" aria-hidden="true">
+        <span class="glow-line glow-line--faint" style="top:12%; left:-10%;"></span>
+      </div>
+
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="label">What we do</span>
+          <h2>Services built to <span class="accent">move people.</span></h2>
+          <p>Six disciplines under one roof, working together so your brand looks sharp and performs everywhere it shows up.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card reveal">
+            <span class="card-num">01</span>
+            <h3>Meta Ads</h3>
+            <p>Performance campaigns that convert.</p>
+          </article>
+          <article class="card reveal" data-delay="1">
+            <span class="card-num">02</span>
+            <h3>Graphic Design</h3>
+            <p>Brand identities and creatives.</p>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <span class="card-num">03</span>
+            <h3>Video Editing</h3>
+            <p>Reels, ads and motion content.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">04</span>
+            <h3>Web Development</h3>
+            <p>Fast, modern, on-brand sites.</p>
+          </article>
+          <article class="card reveal" data-delay="1">
+            <span class="card-num">05</span>
+            <h3>Social Media</h3>
+            <p>Content and community, managed.</p>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <span class="card-num">06</span>
+            <h3>SEO</h3>
+            <p>Be found where buyers search.</p>
+          </article>
+        </div>
+
+        <div class="reveal" style="margin-top:48px;">
+          <a class="text-link" href="contact.html">Explore Services <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. BANNER ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="banner reveal">
+          <div class="deco" aria-hidden="true">
+            <span class="glow-line" style="top:20%; left:-20%;"></span>
+            <span class="glow-line glow-line--faint" style="top:85%; left:-20%;"></span>
+            <span class="chevron" style="top:-40px; right:-80px;"></span>
+            <span class="chevron" style="bottom:-120px; left:-100px; transform:rotate(180deg);"></span>
+          </div>
+          <h2>Build Something <span class="accent">Extraordinary.</span></h2>
+          <p class="sub">Innovative Solutions. Real Impact.</p>
+          <p>At Vanta Motions, we turn ideas into powerful visual and digital experiences.</p>
+          <a class="btn btn--primary" href="contact.html">Start a Project <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. WHY CHOOSE US ================= -->
+    <section class="section section--charcoal">
+      <div class="container split">
+        <div class="reveal">
+          <span class="label">Why choose us</span>
+          <h2>Creative with a <span class="accent">clear purpose.</span></h2>
+          <!-- PLACEHOLDER: short "why choose us" intro paragraph -->
+          <p>We pair bold ideas with measurable results. Every design, edit and campaign is built around one question: does it move your business forward?</p>
+          <a class="text-link" href="about.html">Our Story <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <!-- PLACEHOLDER: "why choose us" reasons (titles and text) -->
+        <ul class="feature-list">
+          <li class="reveal">
+            <span class="tick" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+            </span>
+            <div>
+              <h3>One studio, every channel</h3>
+              <p>Ads, design, video, web and SEO handled by one team, so your brand stays consistent.</p>
+            </div>
+          </li>
+          <li class="reveal" data-delay="1">
+            <span class="tick" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+            </span>
+            <div>
+              <h3>Results you can measure</h3>
+              <p>Clear goals, honest reporting and campaigns tuned for real conversions.</p>
+            </div>
+          </li>
+          <li class="reveal" data-delay="2">
+            <span class="tick" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+            </span>
+            <div>
+              <h3>Premium, on-brand craft</h3>
+              <p>Every frame and pixel is polished to make your brand look its best.</p>
+            </div>
+          </li>
+          <li class="reveal" data-delay="3">
+            <span class="tick" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+            </span>
+            <div>
+              <h3>Fast, friendly turnaround</h3>
+              <p>Quick replies, clear timelines and no surprises along the way.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= 5. CTA STRIP ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-strip reveal">
+          <div>
+            <h2>Ready to put your ideas <span class="accent">in motion?</span></h2>
+            <p>Tell us about your project and we'll get back to you within one working day.</p>
+          </div>
+          <a class="btn btn--primary" href="contact.html">Get Started <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (shared) ================= -->
+  <footer class="site-footer">
+    <div class="deco" aria-hidden="true">
+      <span class="glow-line glow-line--faint" style="top:20%; left:-20%;"></span>
+    </div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Vanta Motions home">
+            <img class="logo-img" src="images/logo.png" alt="Vanta Motions" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">
+            <span class="logo-text">Vanta <span>Motions</span></span>
+          </a>
+          <p>Ideas. In Motion. A modern creative studio for marketing, design and digital.</p>
+        </div>
+
+        <div>
+          <h2 class="footer-title">Explore</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-title">Contact</h2>
+          <ul class="footer-links">
+            <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+            <li><a href="mailto:hello@vantmotions.com">hello@vantmotions.com</a></li>
+            <li><a href="https://www.vantmotions.com" target="_blank" rel="noopener">www.vantmotions.com</a></li>
+            <!-- PLACEHOLDER: office address -->
+            <li><span>Office 12, Creative Plaza, Gulberg III, Lahore, Pakistan</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-title">Follow</h2>
+          <!-- PLACEHOLDER: social media profile URLs (replace each href="#") -->
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 3.8v2.4H8v3h2.5V21h3z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.9 8.8H3.8V20h3.1V8.8zM5.3 4a1.8 1.8 0 100 3.6 1.8 1.8 0 000-3.6zM20.2 13.6c0-3-1.6-4.9-4.2-4.9-1.3 0-2.3.7-2.8 1.4V8.8h-3V20h3.1v-5.6c0-1.5.6-2.7 2.1-2.7s1.8 1.3 1.8 2.8V20h3.1l-.1-6.4z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 002.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 001.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 001.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Vanta Motions. All rights reserved.</p>
+        <p>Ideas. In Motion.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
