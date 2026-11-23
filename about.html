@@ -9,12 +9,29 @@
   <!-- Brand fonts: Playfair Display (headings), Montserrat (body 400 / nav & buttons 500) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.classList.add("js");</script>
+  <script>
+    /* Marks JS as running; plays the intro loader once per browser session (skipped for reduced motion) */
+    (function (d) {
+      d.classList.add("js");
+      try {
+        var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!reduce && !sessionStorage.getItem("vm-intro")) { d.classList.add("intro"); sessionStorage.setItem("vm-intro", "1"); }
+      } catch (e) {}
+    })(document.documentElement);
+  </script>
 </head>
 <body>
+  <!-- Intro loader (first visit per session only; pure CSS animation) -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-logo">Vanta <span>Motions</span></span>
+      <span class="loader-bar"></span>
+      <span class="loader-tag">Ideas. In Motion.</span>
+    </div>
+  </div>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ================= HEADER (shared) ================= -->
@@ -104,22 +121,22 @@
     <!-- ================= STATS ================= -->
     <section class="section">
       <div class="container">
-        <!-- PLACEHOLDER: all four stat numbers -->
+        <!-- PLACEHOLDER: all four stat numbers (edit both the data-count value and the text; they count up on scroll) -->
         <div class="stats reveal">
           <div class="stat">
-            <span class="stat-value">6<span class="accent">+</span></span>
+            <span class="stat-value"><span data-count="6">6</span><span class="accent">+</span></span>
             <span class="stat-label">Years of experience</span>
           </div>
           <div class="stat">
-            <span class="stat-value">350<span class="accent">+</span></span>
+            <span class="stat-value"><span data-count="350">350</span><span class="accent">+</span></span>
             <span class="stat-label">Projects completed</span>
           </div>
           <div class="stat">
-            <span class="stat-value">120<span class="accent">+</span></span>
+            <span class="stat-value"><span data-count="120">120</span><span class="accent">+</span></span>
             <span class="stat-label">Clients served</span>
           </div>
           <div class="stat">
-            <span class="stat-value">8</span>
+            <span class="stat-value"><span data-count="8">8</span></span>
             <span class="stat-label">Cities served</span>
           </div>
         </div>
@@ -241,6 +258,9 @@
           </div>
         </div>
       </div>
+
+      <!-- Large outlined wordmark -->
+      <div class="footer-mark" aria-hidden="true">Vanta <span>Motions</span></div>
 
       <div class="footer-bottom">
         <p>&copy; <span data-year>2026</span> Vanta Motions. All rights reserved.</p>
